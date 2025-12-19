@@ -66,6 +66,7 @@ class _CnnOutputTensorInfoExported(ctypes.LittleEndianStructure):
         ("network_name", ctypes.c_char * NETWORK_NAME_LEN),
         ("num_tensors", ctypes.c_uint32),
         ("info", _OutputTensorInfo * MAX_NUM_TENSORS),
+        ('frameCount', ctypes.c_uint8)
     ]
 
 
